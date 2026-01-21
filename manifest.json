@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Ethical Checkout Risk Checker",
+  "version": "1.0.0",
+  "description": "Shows a sourcing risk indicator on checkout pages using simple heuristics.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
